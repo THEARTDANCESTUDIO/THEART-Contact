@@ -1,0 +1,7 @@
+{
+  "name": "THEART Contact",
+  "description": "A high-end, luxurious contact page for THEART DANCE STUDIO, featuring a minimalist design, interactive elements, and sophisticated typography.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
