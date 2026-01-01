@@ -37,7 +37,7 @@ const translations = {
     faq: "よくある質問",
     contact: "お問い合わせ",
     address: "全北特別自治道 完州郡 伊西面 基地路 50 Kビル 3階 ディアートダンススタジオ",
-    ceo: "대표이사 : キム・テアート",
+    ceo: "代表理事 : キム・テアート",
     company: "株式会社ディアート"
   },
   zh: {
@@ -56,7 +56,8 @@ const translations = {
 
 const Footer: React.FC<{ lang: LanguageType }> = ({ lang }) => {
   const t = translations[lang];
-  const targetLink = "https://stupendous-shortbread-e6c2e2.netlify.app";
+  const faqLink = "https://stupendous-shortbread-e6c2e2.netlify.app";
+  const dancersLink = "https://kaleidoscopic-moxie-80c5dc.netlify.app";
 
   return (
     <footer className="bg-white border-t border-gray-100 pt-20 pb-12 px-6 md:px-12">
@@ -66,14 +67,14 @@ const Footer: React.FC<{ lang: LanguageType }> = ({ lang }) => {
             <h4 className="text-[12px] font-bold uppercase tracking-widest text-gray-400">{t.class}</h4>
             <ul className="space-y-2 text-[13px] font-bold">
               <li><a href="#" className="hover:opacity-50">{t.sched}</a></li>
-              <li><a href="#" className="hover:opacity-50">{t.dance}</a></li>
+              <li><a href={dancersLink} className="hover:opacity-50">{t.dance}</a></li>
             </ul>
           </div>
           <div className="space-y-4">
             <h4 className="text-[12px] font-bold uppercase tracking-widest text-gray-400">{t.info}</h4>
             <ul className="space-y-2 text-[13px] font-bold">
               <li><a href="#" className="hover:opacity-50">{t.about}</a></li>
-              <li><a href={targetLink} className="hover:opacity-50">{t.faq}</a></li>
+              <li><a href={faqLink} className="hover:opacity-50">{t.faq}</a></li>
               <li><a href="#" className="hover:opacity-50 font-black">{t.contact}</a></li>
             </ul>
           </div>
@@ -94,7 +95,6 @@ const Footer: React.FC<{ lang: LanguageType }> = ({ lang }) => {
             </div>
           </div>
         </div>
-
         <div className="border-t border-gray-100 pt-12 pb-8 grid grid-cols-1 lg:grid-cols-2 gap-8 text-[11px] text-gray-400 font-medium">
           <div className="space-y-4">
             <div className="flex flex-wrap gap-x-8 gap-y-2 text-black uppercase font-bold">
