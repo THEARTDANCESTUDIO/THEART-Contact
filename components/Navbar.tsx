@@ -10,25 +10,27 @@ const languages: { code: LanguageType; label: string; region: string }[] = [
   { code: 'zh', label: '中文', region: 'China' }
 ];
 
+const scheduleLink = "https://illustrious-pegasus-596112.netlify.app";
+
 const menuData = {
   en: [
     { name: 'Dancers', link: 'https://kaleidoscopic-moxie-80c5dc.netlify.app' },
-    { name: 'Classes', link: '#' },
+    { name: 'Classes', link: scheduleLink },
     { name: 'Store', link: '#' }
   ],
   ko: [
     { name: '댄서', link: 'https://kaleidoscopic-moxie-80c5dc.netlify.app' },
-    { name: '클래스', link: '#' },
+    { name: '클래스', link: scheduleLink },
     { name: '스토어', link: '#' }
   ],
   ja: [
     { name: 'ダンサー', link: 'https://kaleidoscopic-moxie-80c5dc.netlify.app' },
-    { name: 'クラス', link: '#' },
+    { name: 'クラス', link: scheduleLink },
     { name: 'ストア', link: '#' }
   ],
   zh: [
     { name: '舞者', link: 'https://kaleidoscopic-moxie-80c5dc.netlify.app' },
-    { name: '课程', link: '#' },
+    { name: '课程', link: scheduleLink },
     { name: '商店', link: '#' }
   ]
 };

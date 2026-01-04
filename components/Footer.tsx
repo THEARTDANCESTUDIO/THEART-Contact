@@ -13,7 +13,7 @@ const translations = {
     faq: "FAQ",
     contact: "Contact Us",
     address: "3F, K-Building, 50 Giji-ro, Iseo-myeon, Wanju-gun, Jeonbuk State",
-    ceo: "CEO: Taeart Kim",
+    ceo: "CEO: Kwang Myung Lee",
     company: "THEART Co., Ltd."
   },
   ko: {
@@ -25,7 +25,7 @@ const translations = {
     faq: "자주 묻는 질문",
     contact: "문의하기",
     address: "전북특별자치도 완주군 이서면 기지로 50 케이빌딩 3층 디아트댄스스튜디오",
-    ceo: "대표이사 : 김태아트",
+    ceo: "대표이사 : 이광명",
     company: "(주)디아트"
   },
   ja: {
@@ -37,7 +37,7 @@ const translations = {
     faq: "よくある質問",
     contact: "お問い合わせ",
     address: "全北特別自治道 完州郡 伊西面 基地路 50 Kビル 3階 ディアートダンススタジオ",
-    ceo: "代表理事 : キム・テアート",
+    ceo: "대표이사 : 이광명",
     company: "株式会社ディアート"
   },
   zh: {
@@ -49,7 +49,7 @@ const translations = {
     faq: "常见问题",
     contact: "联系我们",
     address: "全北特别自治道 完州郡 伊西面 基地路 50 K大厦 3层 迪艺术舞蹈工作室",
-    ceo: "代表理事 : 金泰艺术",
+    ceo: "대표이사 : 이광명",
     company: "迪艺术股份有限公司"
   }
 };
@@ -58,6 +58,8 @@ const Footer: React.FC<{ lang: LanguageType }> = ({ lang }) => {
   const t = translations[lang];
   const faqLink = "https://stupendous-shortbread-e6c2e2.netlify.app";
   const dancersLink = "https://kaleidoscopic-moxie-80c5dc.netlify.app";
+  const contactLink = "https://vocal-fairy-ef3f8a.netlify.app";
+  const scheduleLink = "https://illustrious-pegasus-596112.netlify.app";
 
   return (
     <footer className="bg-white border-t border-gray-100 pt-20 pb-12 px-6 md:px-12">
@@ -66,7 +68,7 @@ const Footer: React.FC<{ lang: LanguageType }> = ({ lang }) => {
           <div className="space-y-4">
             <h4 className="text-[12px] font-bold uppercase tracking-widest text-gray-400">{t.class}</h4>
             <ul className="space-y-2 text-[13px] font-bold">
-              <li><a href="#" className="hover:opacity-50">{t.sched}</a></li>
+              <li><a href={scheduleLink} className="hover:opacity-50">{t.sched}</a></li>
               <li><a href={dancersLink} className="hover:opacity-50">{t.dance}</a></li>
             </ul>
           </div>
@@ -75,7 +77,7 @@ const Footer: React.FC<{ lang: LanguageType }> = ({ lang }) => {
             <ul className="space-y-2 text-[13px] font-bold">
               <li><a href="#" className="hover:opacity-50">{t.about}</a></li>
               <li><a href={faqLink} className="hover:opacity-50">{t.faq}</a></li>
-              <li><a href="#" className="hover:opacity-50 font-black">{t.contact}</a></li>
+              <li><a href={contactLink} target="_self" className="hover:opacity-50 font-black">{t.contact}</a></li>
             </ul>
           </div>
           <div className="col-span-2 lg:col-span-4 flex flex-col items-center justify-center lg:items-end space-y-6">
@@ -111,7 +113,7 @@ const Footer: React.FC<{ lang: LanguageType }> = ({ lang }) => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-widest text-gray-400 border-t border-gray-50 pt-8">
-          <p>© 2024 THEART Dance Studio. All Rights Reserved.</p>
+          <p>© 2017 THEART Dance Studio. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
