@@ -1,12 +1,13 @@
 
 import React from 'react';
 import { LanguageType } from '../App';
+import { ArrowUpRight } from 'lucide-react';
 
 const translations = {
-  en: { faq: "FAQ", inq: "INQUIRY", faqSub: "Common Questions", inqSub: "Direct Support" },
-  ko: { faq: "자주 묻는 질문", inq: "1:1 문의", faqSub: "궁금한 점 확인하기", inqSub: "직접 문의하기" },
-  ja: { faq: "よくある質問", inq: "お問い合わせ", faqSub: "よくあるご質問", inqSub: "直接サポート" },
-  zh: { faq: "常见问题", inq: "咨询", faqSub: "常见疑问", inqSub: "直接支持" }
+  en: { faq: "FAQ", inq: "DIRECT", faqSub: "COMMON QUESTIONS", inqSub: "TALK TO US" },
+  ko: { faq: "자주 묻는 질문", inq: "1:1 문의", faqSub: "무엇이든 물어보세요", inqSub: "실시간 상담하기" },
+  ja: { faq: "よくある質問", inq: "お問い合わせ", faqSub: "疑問を解決", inqSub: "直接サポート" },
+  zh: { faq: "常见问题", inq: "在线咨询", faqSub: "常见疑问", inqSub: "即시支持" }
 };
 
 const InquirySection: React.FC<{ lang: LanguageType }> = ({ lang }) => {
@@ -14,31 +15,37 @@ const InquirySection: React.FC<{ lang: LanguageType }> = ({ lang }) => {
   const targetLink = "https://stupendous-shortbread-e6c2e2.netlify.app";
 
   return (
-    <section className="max-w-[1440px] mx-auto px-6 md:px-12 py-24">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <section className="max-w-[1440px] mx-auto px-6 md:px-12 py-32">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* FAQ Card */}
         <a 
           href={targetLink}
-          className="group relative h-[400px] overflow-hidden bg-gray-50 flex flex-col justify-center items-center cursor-pointer block"
+          target="_self"
+          className="group relative h-[500px] overflow-hidden bg-studio-gray flex flex-col justify-end p-12 transition-all duration-700 hover:shadow-2xl"
         >
-          <div className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out"></div>
-          <div className="relative z-10 text-center transition-colors duration-500 group-hover:text-white px-4">
-            <span className="text-xs font-bold tracking-[0.3em] uppercase opacity-60 mb-2 block">{t.faqSub}</span>
-            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4">{t.faq}</h2>
-            <div className="w-12 h-[2px] bg-black group-hover:bg-white mx-auto transition-colors"></div>
+          <div className="absolute inset-0 bg-black scale-y-0 origin-bottom group-hover:scale-y-100 transition-transform duration-700 ease-[0.16,1,0.3,1]"></div>
+          <div className="relative z-10 transition-all duration-700 group-hover:text-white">
+            <div className="flex justify-between items-start mb-8">
+               <span className="text-[10px] font-black tracking-[0.4em] uppercase opacity-40 group-hover:opacity-60">{t.faqSub}</span>
+               <ArrowUpRight size={32} strokeWidth={1} className="opacity-0 group-hover:opacity-100 transition-all duration-700 translate-y-4 group-hover:translate-y-0" />
+            </div>
+            <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-2">{t.faq}</h2>
           </div>
         </a>
 
-        {/* Contact Form Link / Direct Card */}
+        {/* Direct Card */}
         <a 
           href={targetLink}
-          className="group relative h-[400px] overflow-hidden bg-gray-50 flex flex-col justify-center items-center cursor-pointer block"
+          target="_self"
+          className="group relative h-[500px] overflow-hidden bg-studio-gray flex flex-col justify-end p-12 transition-all duration-700 hover:shadow-2xl"
         >
-          <div className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out"></div>
-          <div className="relative z-10 text-center transition-colors duration-500 group-hover:text-white px-4">
-            <span className="text-xs font-bold tracking-[0.3em] uppercase opacity-60 mb-2 block">{t.inqSub}</span>
-            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4">{t.inq}</h2>
-            <div className="w-12 h-[2px] bg-black group-hover:bg-white mx-auto transition-colors"></div>
+          <div className="absolute inset-0 bg-studio-red scale-y-0 origin-bottom group-hover:scale-y-100 transition-transform duration-700 ease-[0.16,1,0.3,1]"></div>
+          <div className="relative z-10 transition-all duration-700 group-hover:text-white">
+            <div className="flex justify-between items-start mb-8">
+               <span className="text-[10px] font-black tracking-[0.4em] uppercase opacity-40 group-hover:opacity-60">{t.inqSub}</span>
+               <ArrowUpRight size={32} strokeWidth={1} className="opacity-0 group-hover:opacity-100 transition-all duration-700 translate-y-4 group-hover:translate-y-0" />
+            </div>
+            <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-2">{t.inq}</h2>
           </div>
         </a>
       </div>

@@ -81,7 +81,7 @@ const Footer: React.FC<{ lang: LanguageType }> = ({ lang }) => {
           <div className="col-span-2 lg:col-span-4 flex flex-col items-center justify-center lg:items-end space-y-6">
             <div className="text-center lg:text-right">
               <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-2">THEART</h2>
-              <p className="text-lg font-bold tracking-[0.2em] uppercase">Dance Studio Wanju</p>
+              <p className="text-lg font-bold tracking-[0.2em] uppercase">Dance Studio HEAD OFFICE</p>
               <p className="text-2xl font-black mt-2">010-9584-9901</p>
               <p className="text-sm font-medium tracking-wider opacity-60">THEART1120@NAVER.COM</p>
             </div>
