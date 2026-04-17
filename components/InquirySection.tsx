@@ -32,8 +32,8 @@ const translations = {
 
 const InquirySection: React.FC<{ lang: LanguageType }> = ({ lang }) => {
   const t = translations[lang];
-  const faqLink = "https://stupendous-shortbread-e6c2e2.netlify.app";
-  const contactLink = "https://vocal-fairy-ef3f8a.netlify.app";
+  const faqLink = "https://theart-faq.netlify.app";
+  const contactLink = "https://theart-contact.netlify.app";
 
   return (
     <section className="max-w-[1440px] mx-auto px-6 md:px-12 py-32">

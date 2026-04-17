@@ -56,10 +56,10 @@ const translations = {
 
 const Footer: React.FC<{ lang: LanguageType }> = ({ lang }) => {
   const t = translations[lang];
-  const faqLink = "https://stupendous-shortbread-e6c2e2.netlify.app";
-  const dancersLink = "https://kaleidoscopic-moxie-80c5dc.netlify.app";
-  const contactLink = "https://vocal-fairy-ef3f8a.netlify.app";
-  const scheduleLink = "https://illustrious-pegasus-596112.netlify.app";
+  const faqLink = "https://theart-faq.netlify.app";
+  const dancersLink = "https://theart-dancer.netlify.app";
+  const contactLink = "https://theart-contact.netlify.app";
+  const scheduleLink = "https://theart-schedule.netlify.app";
 
   return (
     <footer className="bg-white border-t border-gray-100 pt-20 pb-12 px-6 md:px-12">
@@ -82,7 +82,9 @@ const Footer: React.FC<{ lang: LanguageType }> = ({ lang }) => {
           </div>
           <div className="col-span-2 lg:col-span-4 flex flex-col items-center justify-center lg:items-end space-y-6">
             <div className="text-center lg:text-right">
-              <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-2">THEART</h2>
+              <a href="https://theartdancestudio.com" className="hover:opacity-50 transition-opacity">
+                <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-2">THEART</h2>
+              </a>
               <p className="text-lg font-bold tracking-[0.2em] uppercase">Dance Studio HEAD OFFICE</p>
               <p className="text-2xl font-black mt-2">010-9584-9901</p>
               <p className="text-sm font-medium tracking-wider opacity-60">THEART1120@NAVER.COM</p>

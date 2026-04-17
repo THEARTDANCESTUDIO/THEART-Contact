@@ -13,7 +13,7 @@ const translations = {
 const CTASection: React.FC<{ lang: LanguageType }> = ({ lang }) => {
   return (
     <a 
-      href="https://stupendous-shortbread-e6c2e2.netlify.app" 
+      href="https://theart-faq.netlify.app" 
       className="block bg-[#FF4F33] text-white py-12 px-6 overflow-hidden relative group cursor-pointer transition-colors duration-500 hover:bg-black"
     >
       <div className="max-w-[1440px] mx-auto flex items-center justify-between relative z-10">

@@ -10,26 +10,26 @@ const languages: { code: LanguageType; label: string; region: string }[] = [
   { code: 'zh', label: '中文', region: 'China' }
 ];
 
-const scheduleLink = "https://illustrious-pegasus-596112.netlify.app";
+const scheduleLink = "https://theart-schedule.netlify.app";
 
 const menuData = {
   en: [
-    { name: 'Dancers', link: 'https://kaleidoscopic-moxie-80c5dc.netlify.app' },
+    { name: 'Dancers', link: 'https://theart-dancer.netlify.app' },
     { name: 'Classes', link: scheduleLink },
     { name: 'Store', link: '#' }
   ],
   ko: [
-    { name: '댄서', link: 'https://kaleidoscopic-moxie-80c5dc.netlify.app' },
+    { name: '댄서', link: 'https://theart-dancer.netlify.app' },
     { name: '클래스', link: scheduleLink },
     { name: '스토어', link: '#' }
   ],
   ja: [
-    { name: 'ダンサー', link: 'https://kaleidoscopic-moxie-80c5dc.netlify.app' },
+    { name: 'ダンサー', link: 'https://theart-dancer.netlify.app' },
     { name: 'クラス', link: scheduleLink },
     { name: 'ストア', link: '#' }
   ],
   zh: [
-    { name: '舞者', link: 'https://kaleidoscopic-moxie-80c5dc.netlify.app' },
+    { name: '舞者', link: 'https://theart-dancer.netlify.app' },
     { name: '课程', link: scheduleLink },
     { name: '商店', link: '#' }
   ]
@@ -52,7 +52,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentLang, onLangChange }) => {
   }, []);
 
   const currentMenu = menuData[currentLang];
-  const homeLink = "https://theartdancestudio1120.netlify.app";
+  const homeLink = "https://theartdancestudio.com";
 
   return (
     <>
